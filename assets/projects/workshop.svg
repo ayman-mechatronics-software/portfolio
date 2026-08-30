@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-labelledby="t">
+  <title id="t">Virtual industrial workshop schematic</title>
+  <rect width="800" height="400" fill="#0b1520"/>
+  <rect x="40" y="60" width="220" height="280" rx="16" fill="#122433" stroke="#14b8a6"/>
+  <rect x="290" y="60" width="220" height="280" rx="16" fill="#122433" stroke="#38bdf8"/>
+  <rect x="540" y="60" width="220" height="280" rx="16" fill="#122433" stroke="#14b8a6"/>
+  <text x="150" y="200" text-anchor="middle" fill="#e8eef4" font-family="Segoe UI, sans-serif" font-size="22">PLC / Process</text>
+  <text x="400" y="200" text-anchor="middle" fill="#e8eef4" font-family="Segoe UI, sans-serif" font-size="22">Digital Twin</text>
+  <text x="650" y="200" text-anchor="middle" fill="#e8eef4" font-family="Segoe UI, sans-serif" font-size="22">Simulation</text>
+  <path d="M260 200 H290" stroke="#14b8a6" stroke-width="4"/>
+  <path d="M510 200 H540" stroke="#38bdf8" stroke-width="4"/>
+</svg>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayman — Mechatronics · Digital Twins · Industrial Automation</title>
+  <meta name="description" content="Portfolio of Ayman, mechatronics engineering student: digital twins, industrial simulation, automation, industrial IT, software and web development.">
+  <meta name="author" content="Ayman">
+  <meta property="og:title" content="Ayman — Mechatronics Engineer / Digital Twin & Industrial Automation">
+  <meta property="og:description" content="Combining industrial engineering, simulation and software development to build intelligent digital solutions.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#070d14">
+  <link rel="icon" href="assets/icons/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&amp;family=Syne:wght@700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a class="skip" href="#home">Skip to content</a>
+
+  <header class="nav" id="navbar">
+    <div class="wrap nav-inner">
+      <a class="logo" href="#home">AYMAN</a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="#home" data-i18n="nav.home">Home</a></li>
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
+          <li><a href="#expertise" data-i18n="nav.expertise">Expertise</a></li>
+          <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+          <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button type="button" class="lang-btn" data-lang="fr" aria-label="Français">FR</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        <button type="button" class="btn btn-ghost print-hide" id="btnPrint" data-i18n="nav.download">Download CV</button>
+        <button type="button" class="icon-btn" id="themeToggle" aria-label="Toggle theme">🌙</button>
+        <button type="button" class="hamburger" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu"></div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="kicker reveal">Engineering × Digital</p>
+          <h1 class="reveal d1">AYMAN</h1>
+          <h2 class="reveal d2" data-i18n="hero.role">Mechatronics Engineering Student</h2>
+          <ul class="stack-list reveal d2">
+            <li data-i18n="hero.line1">Digital Twins</li>
+            <li data-i18n="hero.line2">Industrial Simulation</li>
+            <li data-i18n="hero.line3">Automation</li>
+            <li data-i18n="hero.line4">Industrial IT</li>
+            <li data-i18n="hero.line5">Software Development</li>
+          </ul>
+          <p class="lead reveal d3"><strong data-i18n="hero.pitch"></strong></p>
+          <p class="lead reveal d3" data-i18n="hero.intro"></p>
+          <div class="cta reveal d3">
+            <a class="btn btn-primary" href="#projects" data-i18n="hero.projects">Explore My Projects</a>
+            <button type="button" class="btn" id="btnPrintHero" data-i18n="nav.download">Download CV</button>
+          </div>
+          <div class="socials" id="heroSocials"></div>
+        </div>
+        <aside class="twin-visual reveal d2" aria-label="Industrial digital twin data flow">
+          <div class="flow" id="heroFlow"></div>
+          <svg class="twin-svg" id="dataSvg" viewBox="0 0 400 200" role="img" aria-label="Animated data path from PLC to dashboard">
+            <path class="flow-line" d="M30 100 H370" />
+            <circle class="packet" id="packet" r="5" cx="30" cy="100"></circle>
+            <text x="30" y="40" fill="currentColor" font-size="11">PLC</text>
+            <text x="150" y="40" fill="currentColor" font-size="11">OPC UA</text>
+            <text x="240" y="40" fill="currentColor" font-size="11">Twin</text>
+            <text x="320" y="40" fill="currentColor" font-size="11">HMI</text>
+          </svg>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker" data-i18n="about.kicker">About Me</p>
+          <h2 data-i18n="about.title"></h2>
+          <p data-i18n="about.body"></p>
+        </div>
+        <div class="timeline-row js-reveal">
+          <span>Mechatronics</span>→<span>Automation</span>→<span>Industrial Simulation</span>→<span>Digital Twins</span>→<span>Software</span>→<span>Digitalization</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="expertise">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker" data-i18n="expertise.kicker">Core Expertise</p>
+          <h2 data-i18n="expertise.title"></h2>
+        </div>
+        <div class="grid-3" id="expertiseGrid"></div>
+      </div>
+    </section>
+
+    <section id="digital-twins">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker" data-i18n="twin.kicker"></p>
+          <h2 data-i18n="twin.title"></h2>
+          <p data-i18n="twin.hint"></p>
+        </div>
+        <div class="dt-chain js-reveal" id="twinChain"></div>
+      </div>
+    </section>
+
+    <section id="tech">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker" data-i18n="tech.kicker"></p>
+          <h2 data-i18n="tech.title"></h2>
+          <p data-i18n="tech.note"></p>
+        </div>
+        <div class="tech-grid" id="techGrid"></div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker" data-i18n="exp.kicker"></p>
+          <h2 data-i18n="exp.title"></h2>
+        </div>
+        <article class="card js-reveal glow-soft">
+          <p class="kicker">Sonelgaz</p>
+          <h3 data-i18n="exp.sonelgaz"></h3>
+          <p class="muted" data-i18n="exp.sonelgaz.body"></p>
+          <div class="grid-2" style="margin-top:16px">
+            <div>
+              <h4 data-i18n="exp.prod">Production</h4>
+              <ul class="chips"><li>Industrial environment</li><li>Production systems</li><li>Industrial processes</li><li>Automation</li><li>Equipment</li></ul>
+            </div>
+            <div>
+              <h4 data-i18n="exp.dist">Distribution</h4>
+              <ul class="chips"><li>Distribution networks</li><li>Electrical infrastructure</li><li>Distribution systems</li><li>Industrial equipment</li></ul>
+            </div>
+          </div>
+        </article>
+        <article class="card js-reveal" style="margin-top:14px">
+          <p class="kicker">Freelance</p>
+          <h3 data-i18n="exp.freelance"></h3>
+          <p class="muted" data-i18n="exp.freelance.body"></p>
+          <ul class="chips">
+            <li>Custom platforms</li><li>Client-specific solutions</li><li>E-commerce</li>
+            <li>Web interfaces</li><li>APIs</li><li>Digitalization</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker" data-i18n="projects.kicker"></p>
+          <h2 data-i18n="projects.title"></h2>
+        </div>
+        <div class="filters print-hide" id="projectFilters" role="tablist"></div>
+        <div class="projects" id="projectGrid"></div>
+      </div>
+    </section>
+
+    <section id="ai">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker" data-i18n="ai.kicker"></p>
+          <h2 data-i18n="ai.title"></h2>
+          <p data-i18n="ai.body"></p>
+        </div>
+        <div class="card ai-formula js-reveal">
+          <span class="ai-pill">Human</span>
+          <span>+</span>
+          <span class="ai-pill">AI</span>
+          <span>→</span>
+          <span class="ai-pill" data-i18n="ai.formula">Human + AI → Digital Solution</span>
+        </div>
+        <ul class="chips js-reveal" style="margin-top:16px">
+          <li>AI-assisted development</li><li>Prompt Engineering</li><li>Vibe Coding</li>
+          <li>AI content generation</li><li>Image optimization</li><li>Automation</li>
+          <li>AI-assisted programming</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker" data-i18n="skills.kicker"></p>
+          <h2 data-i18n="skills.title"></h2>
+        </div>
+        <div class="grid-3" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <section id="timeline">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker" data-i18n="time.kicker"></p>
+          <h2 data-i18n="time.title"></h2>
+        </div>
+        <div class="v-timeline" id="pathTimeline"></div>
+      </div>
+    </section>
+
+    <section id="languages">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker" data-i18n="lang.kicker"></p>
+          <h2 data-i18n="lang.title"></h2>
+        </div>
+        <div class="grid-3">
+          <article class="card"><h3 data-i18n="lang.ar"></h3><p class="muted" data-i18n="lang.ar.l"></p></article>
+          <article class="card"><h3 data-i18n="lang.fr"></h3><p class="muted" data-i18n="lang.fr.l"></p></article>
+          <article class="card"><h3 data-i18n="lang.en"></h3><p class="muted" data-i18n="lang.en.l"></p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker" data-i18n="contact.kicker"></p>
+          <h2 data-i18n="contact.title"></h2>
+        </div>
+        <div class="contact-grid" id="contactGrid"></div>
+        <div class="grid-2" style="margin-top:14px">
+          <article class="card">
+            <p class="kicker" data-i18n="contact.social"></p>
+            <div class="socials" id="contactSocials"></div>
+            <div class="cta">
+              <a class="btn btn-primary" id="mailBtn" href="mailto:aymansbr213@gmail.com" data-i18n="contact.send">Send Email</a>
+              <button type="button" class="btn print-hide" id="btnPrint2" data-i18n="nav.download">Download CV</button>
+            </div>
+          </article>
+          <article class="card qr">
+            <p class="kicker" data-i18n="contact.qr"></p>
+            <p class="muted" id="qrHint" data-i18n="contact.qr.hint"></p>
+            <div id="qrMount"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© <span id="year"></span> Ayman — <span data-i18n="footer"></span></div>
+  </footer>
+
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-panel">
+      <h3 id="modalTitle"></h3>
+      <div id="modalBody"></div>
+      <button type="button" class="btn" id="modalClose" data-i18n="projects.close">Close</button>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/skills.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

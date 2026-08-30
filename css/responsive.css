@@ -1,0 +1,23 @@
+@media (max-width: 1020px) {
+  .hero-grid,
+  .grid-2,
+  .grid-3,
+  .projects,
+  .contact-grid { grid-template-columns: 1fr 1fr; }
+  .tech-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 760px) {
+  .nav-links,
+  .nav-actions .btn { display: none; }
+  .hamburger { display: block; }
+  .hero-grid,
+  .grid-2,
+  .grid-3,
+  .projects,
+  .contact-grid,
+  .tech-grid { grid-template-columns: 1fr; }
+  .hero { padding-top: 36px; }
+  .twin-svg { height: 180px; }
+  .socials a { width: 44px; height: 44px; }
+}

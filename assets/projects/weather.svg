@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img">
+  <title>Weather information system</title>
+  <rect width="800" height="400" fill="#0c1524"/>
+  <circle cx="400" cy="200" r="90" fill="none" stroke="#38bdf8" stroke-width="3"/>
+  <circle cx="400" cy="200" r="40" fill="#14b8a6" opacity="0.4"/>
+  <text x="400" y="206" text-anchor="middle" fill="#e8eef4" font-family="Segoe UI, sans-serif" font-size="18">MSII</text>
+  <text x="400" y="340" text-anchor="middle" fill="#93a4b3" font-family="Segoe UI, sans-serif" font-size="16">Analysis · Diagnosis · Design</text>
+</svg>
