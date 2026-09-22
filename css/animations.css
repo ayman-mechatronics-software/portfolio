@@ -1,59 +1,32 @@
-/* Motion — keep light; disabled when prefers-reduced-motion */
 .reveal {
   opacity: 0;
-  transform: translateY(16px);
-  animation: rise 0.7s ease forwards;
+  transform: translateY(10px);
+  animation: fade-up 0.55s ease forwards;
 }
-.d1 { animation-delay: 0.08s; }
-.d2 { animation-delay: 0.16s; }
-.d3 { animation-delay: 0.24s; }
-@keyframes rise {
+.d1 { animation-delay: 0.06s; }
+.d2 { animation-delay: 0.12s; }
+@keyframes fade-up {
   to { opacity: 1; transform: none; }
 }
 
-.btn, .icon-btn, .card, .expertise-card, .tech-card, .project-card, .dt-node {
-  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+.btn, .expertise-card, .project-card, .skill-card, .socials a {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.btn:hover, .icon-btn:hover {
+.btn:hover, .expertise-card:hover, .project-card:hover {
   transform: translateY(-2px);
-  box-shadow: var(--shadow);
 }
-.expertise-card:hover, .tech-card:hover, .project-card:hover, .dt-node:hover {
-  transform: translateY(-4px);
-}
+.socials a:hover { transform: scale(1.04); }
 
-.js-reveal { opacity: 0; transform: translateY(14px); }
-.js-reveal.is-inview,
-.v-item.is-inview,
-.tech-card.is-inview,
-.expertise-card.is-inview { animation: rise 0.6s ease forwards; }
-
-.glow-soft {
-  box-shadow: 0 0 0 1px color-mix(in srgb, var(--primary) 25%, var(--border)), var(--shadow);
-}
-
-@keyframes dash {
-  to { stroke-dashoffset: -40; }
-}
-.flow-line {
-  stroke: var(--primary);
-  stroke-width: 1.5;
-  fill: none;
-  stroke-dasharray: 6 8;
-  animation: dash 1.4s linear infinite;
-}
-
-.modal-panel {
-  animation: pop 0.22s ease;
-}
-@keyframes pop {
-  from { opacity: 0; transform: translateY(10px) scale(0.98); }
-  to { opacity: 1; transform: none; }
+.js-in { opacity: 0; transform: translateY(8px); }
+.js-in.is-visible {
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.45s ease, transform 0.45s ease;
 }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .reveal, .is-inview, .modal-panel, .flow-line, .btn, .card, .expertise-card {
+  .reveal, .js-in, .btn, .expertise-card, .project-card {
     animation: none !important;
     transition: none !important;
     opacity: 1 !important;
